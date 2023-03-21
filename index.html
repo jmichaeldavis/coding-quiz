@@ -1,43 +1,103 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>Coding Quiz</title>
-    <link rel="stylesheet" href="./assets/style.css"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/style.css" />
   </head>
-  <body>
+<body>
     <header>
-      <div id="quiz-title">Ultimate Coding Quiz</div>
-      <button id="quiz-button">Begin</button>
+      <div id="highscore">
+        <button id="highscore-button" class="button"><span>Highscores</span></button>
+      </div>
+      <div id="timer-box">
+        <div id="timer-count">
+          <p>Score</p>
+          <p id="score">60</p>
+        </div>
+      </div>
     </header>
 
     <main>
-      <section>
-        <div id="timer-box">
-            <div id="timer-count">
-                <h4>seconds remaining</h4>
-            </div>
+      <div>
+      <section class="main">
+        <div class="quiz-box">
+            <h1 id = "main">CODING QUIZ</h1>
+            <button id="start-button" class="button"><span>Start</span></button>
         </div>
-      </section>
+        <!-- Question #1 -->
+        <section class="quiz-box" id="question-1">
 
-      <section>
-        <div id="quiz-box">
-          <div id="quiz-question"></div>
-          <div id="quiz-answers">
-            <div id="answer-1"></div>
-            <div id="answer-2"></div>
-            <div id="answer-3"></div>
-            <div id="answer-4"></div>
+          <div>
+              <div class="question-container">
+                  <h2>What coding language deals with structure and objects?</h2>
+              </div>
+              <div class="answer-container">
+                  <button class="q1-wrong-answer" id="q1a1">CSS</button>
+                  <button class="right-answer" id="q1a2">HTML</button>
+                  <button class="q1-wrong-answer" id="q1a3">JavaScript</button>
+                  <button class="q1-wrong-answer" id="q1a4">None of the Above</button>
+              </div>
           </div>
-        </div>
+      </section>
+          <!-- Question #2 -->
+          <section class="quiz-box" id="question-2">
+              <div>
+                  <div class="question-container">
+                      <h2>What symbol does jQuery functions start with?</h2>
+                  </div>
+                  <div class="answer-container">
+                      <button class="wrong-answer" id="q2a1">!!</button>
+                      <button class="wrong-answer" id="q2a2">&</button>
+                      <button class="right-answer" id="q2a3">$</button>
+                      <button class="wrong-answer" id="q2a4">?</button>
+                  </div>
+              </div>
+          </section>
+          <!-- Question #3 -->
+          <section class="quiz-box" id="question-3">
+              <div>
+                  <div class="question-container">
+                      <h2>What number is the first index on an array?</h2>
+                  </div>
+                  <div class="answer-container">
+                      <button class="wrong-answer" id="q3a1">-20</button>
+                      <button class="wrong-answer" id="q3a2">1</button>
+                      <button class="right-answer" id="q3a3">0</button>
+                      <button class="wrong-answer" id="q3a4">15</button>
+                  </div>
+              </div>
+          </section>
+          <!-- Question #4 -->
+          <section class="quiz-box" id="question-4">
+              <div>
+                  <div class="question-container">
+                      <h2>In JavaScript what makes something a string?</h2>
+                  </div>
+                  <div class="answer-container">
+                      <button class="right-answer" id="q4a1">"Anything within quotation marks"</button>
+                      <button class="wrong-answer" id="q4a2">Telling it to be a string</button>
+                      <button class="wrong-answer" id="q4a3">If it is a boolean</button>
+                      <button class="wrong-answer" id="q4a4">None of the Above</button>
+                  </div>
+              </div>
+          </section>
       </section>
 
-  
-    </main>
-    <footer>
-        <div id="high-score">
+      
+      <div id ="save-score">
+        <h1>Save Your Score</h1>
+        <label for="initials-input">
+          <input type="text" name="initials-input" id="initials-input" placeholder="Enter Initials Here"/>
+          <button id="submit-button" class="button"><span>Submit</span></button>
+        </label>
+      </div>
 
-        </div>
-    </footer>
+    
+    </main>
+      
     <script src="assets/script.js"></script>
   </body>
 </html>
